@@ -8,6 +8,13 @@ const initialstate = {
 
 // hiiii
 const Reducer = (state = initialstate, action) => {
+       if(action.type==="CHANGE_NAME"){
+            return {
+               ...state,
+               name:action.payload
+
+            }
+       }
               return state;
 };
 
